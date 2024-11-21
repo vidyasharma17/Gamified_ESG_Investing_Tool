@@ -75,9 +75,9 @@ if not portfolio_data.empty:
     st.markdown("Logos of the companies in your portfolio. Missing logos are replaced with a placeholder.")
     for _, row in portfolio_data.iterrows():
         if pd.notna(row["logo"]) and str(row["logo"]).strip() != "":
-            st.image(row["logo"], caption=row["name"], width=100, use_column_width=False)
+            st.image(row["logo"], caption=row["name"], width=100, use_container_width=False)
         else:
-            st.image(PLACEHOLDER_IMAGE_PATH, caption=row["name"], width=100, use_column_width=False)
+            st.image(PLACEHOLDER_IMAGE_PATH, caption=row["name"], width=100, uuse_container_width=False)
 
     # Calculate ESG Scores
     avg_environment = portfolio_data['environment_score'].mean()
