@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 import random
+import os
 
 # Constants
 PLACEHOLDER_IMAGE_PATH = "/Users/vidyasharma/Downloads/Dataset/Gamified ESG Tool/No_Logo_Available.png"
@@ -15,6 +16,9 @@ This tool helps you build and analyze an ESG (Environmental, Social, and Governa
 🎮 **Compete, Learn, and Earn Coins!** 🎉  
 Let's create a sustainable portfolio while having fun!
 """)
+
+# Debugging: Display the current working directory
+st.write("Current Working Directory:", os.getcwd())
 
 # Load Dataset
 try:
