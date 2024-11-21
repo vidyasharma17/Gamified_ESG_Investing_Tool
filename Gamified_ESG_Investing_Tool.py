@@ -18,7 +18,7 @@ Let's create a sustainable portfolio while having fun!
 
 # Load Dataset
 try:
-    esg_data = pd.read_csv('/Users/vidyasharma/Downloads/data.csv')
+    esg_data = pd.read_csv('data.csv')
 except FileNotFoundError:
     st.error("Dataset not found. Please check the file path.")
     st.stop()
